@@ -14,8 +14,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between bg-white text-black">
       <header className='header p-4 bg-[#cde4ea] flex items-center justify-between fixed top-0 right-0 left-0 z-10'>
           <div className='flex h-12 cursor-pointer'>
-              <img alt="" src="logo.png"></img>
-              <img alt="" src="gfmt.png"></img>
+              <Image alt="" src="/logo.png" width={90} height={1}></Image>
+              <Image alt="" src="/gfmt.png" width={60} height={1}></Image>
           </div>
           <nav className='hidden md:flex'>
               {["Về chúng tôi", "Liên hệ"].map(i => 
@@ -40,7 +40,7 @@ export default function Home() {
                   Mua ngay<span className='ml-2'><AiOutlineShoppingCart/></span>         
               </button>
             </div>
-            <div className='md:w-1/2 mx-auto mt-12 md:mt-0 bg-black'><img alt="" src="znfnf.png"></img></div>
+            <div className='md:w-1/2 mx-auto mt-12 md:mt-0 bg-black'><Image width={1200} height={1} alt="" src="/znfnf.png"></Image></div>
           </div>
         </div>
       <section className='w-full'><Wid/></section>
@@ -48,7 +48,7 @@ export default function Home() {
       <section className='w-full'>
           <h2 className='font-bold text-4xl mx-auto text-center mb-8 text-sky-400 mt-20'>Quy cách đóng gói</h2>
           <div className='flex md:flex-row flex-col items-center md:justify-between py-4 px-2 md:px-20'>
-            <img alt=""  src="gh.png" className='w-2/3 md:w-2/5 order-2 md:order-1 mt-8 md:mt-0'></img>
+            <Image alt=""  src="/gh.png" className='w-2/3 md:w-2/5 order-2 md:order-1 mt-8 md:mt-0' width={1200} height={1} ></Image>
             <div className='w-full md:w-1/2 md:order-2 order-1 '>
               <div className='flex'>
                   {["gói/hộp", "gram/gói"].map(i =>
