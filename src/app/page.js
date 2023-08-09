@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Head from 'next/head'
 import {IoMdNutrition} from 'react-icons/io'
 import {IoAccessibilitySharp} from 'react-icons/io5'
 import {GiBodyHeight, GiNightSleep, GiBrain} from 'react-icons/gi'
@@ -14,8 +15,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between bg-white text-black">
       <header className='header p-4 bg-[#cde4ea] flex items-center justify-between fixed top-0 right-0 left-0 z-10'>
           <div className='flex h-12 cursor-pointer'>
-              <Image alt="" src="/logo.png" width={90} height={1}></Image>
-              <Image alt="" src="/gfmt.png" width={60} height={1}></Image>
+              <Image alt="" src="/logo.png" width={90} height={1} priority={true}></Image>
+              <Image alt="" src="/gfmt.png" width={60} height={1} priority={true}></Image>
           </div>
           <nav className='hidden md:flex'>
               {["Về chúng tôi", "Liên hệ"].map(i => 
@@ -31,7 +32,7 @@ export default function Home() {
               <HamburgerComponent/>
           </div>
       </header>
-      <div className="bg-[url(/A.png)] bg-[length:100%_100%] h-[600px] flex justify-center px-12 mt-20 w-full">
+      <div className="bg-[url(/A.png)] bg-[length:100%_100%] h-[700px] flex justify-center px-12 mt-20 w-full">
           <div className='my-24'>  
             <div className='mx-auto'>
               <h1 className='font-bold text-3xl md:text-4xl text-center'>Grow Grow</h1>
@@ -40,7 +41,7 @@ export default function Home() {
                   Mua ngay<span className='ml-2'><AiOutlineShoppingCart/></span>         
               </button>
             </div>
-            <div className='md:w-1/2 mx-auto mt-12 md:mt-0 bg-black'><Image width={1200} height={1} alt="" src="/znfnf.png"></Image></div>
+            <div className='md:w-1/2 mx-auto mt-12 md:mt-0 bg-black'><Image width={1200} height={1} alt="" src="/znfnf.png"  priority={true}></Image></div>
           </div>
         </div>
       <section className='w-full'><Wid/></section>
