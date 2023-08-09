@@ -16,7 +16,7 @@ export default function Home() {
       <header className='header p-4 bg-[#cde4ea] flex items-center justify-between fixed top-0 right-0 left-0 z-10'>
           <div className='flex h-12 cursor-pointer'>
               <Image alt="" src="/logo.png" width={90} height={1} priority={true}></Image>
-              <Image alt="" src="/gfmt.png" width={60} height={1} priority={true}></Image>
+              <Image alt="" src="/gfmt.png" width={70} height={1} priority={true}></Image>
           </div>
           <nav className='hidden md:flex'>
               {["Về chúng tôi", "Liên hệ"].map(i => 
