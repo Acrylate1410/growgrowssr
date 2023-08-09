@@ -193,7 +193,8 @@ function NotableBenefits() {
                                                       : 'py-8 md:flex justify-around items-center h-full bg-[#c8ddfa]'}>
                   <div className={i.id % 2 === 0 ?  'mx-auto md:mx-0 py-8 h-1/2 md:h-4/5 w-1/2 md:w-1/3 flex items-center justify-center'
                                                  :  'mx-auto md:mx-0 py-8 h-1/2 md:h-4/5 w-1/2 md:w-1/3 flex items-center justify-center order-2'}>
-                    <img alt="" src={i.img}></img>
+                    <Image sizes="(max-width: 768px) 100vw"
+                        height={300} width={300} alt="" src={"/" + i.img}></Image>
                   </div>
                   <div className='md:w-1/3 '>
                     <h2 className='font-bold text-3xl md:text-4xl mb-8 text-center md:text-start'>Grow Grow có gì nổi bật?</h2>
@@ -219,7 +220,9 @@ function Wid() {
       <p className='text-lg text-center mt-4 md:mb-0 mb-20'>Giúp mẹ chăm con nhàn rỗi và mang đến sức khỏe toàn diện cho con</p>
       <div className='md:flex justify-around items-center mx-4 md:mx-12'>
           <WidCol data={data1}/>
-          <img alt=""  src="8881630d46e995b7ccf8.jpg" className='md:w-1/3 md:mx-8 my-20 md:mx-0'></img>
+          <Image 	sizes="(max-width: 768px) 100vw"
+          height={400} width={400} alt=""  
+          src="/8881630d46e995b7ccf8.jpg" className='md:w-1/3 md:mx-8 my-20 md:mx-0'></Image>
           <WidCol data={data2}/>
       </div>
       </>
