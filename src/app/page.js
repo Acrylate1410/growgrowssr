@@ -12,7 +12,7 @@ import { useRef, useState, useEffect } from 'react';
 import Hamburger from 'hamburger-react'
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-white text-black">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       <header className='header p-4 bg-[#cde4ea] flex items-center justify-between fixed top-0 right-0 left-0 z-10'>
           <div className='flex h-12 cursor-pointer'>
               <Image alt="" src="/logo.png" width={90} height={1} priority={true}></Image>
