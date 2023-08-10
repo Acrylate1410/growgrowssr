@@ -41,7 +41,7 @@ export default function Home() {
                   Mua ngay<span className='ml-2'><AiOutlineShoppingCart/></span>         
               </button>
             </div>
-            <div className='md:w-1/2 mx-auto mt-12 md:mt-0 bg-black'><Image width={1200} height={1} alt="" src="/znfnf.png"  priority={true}></Image></div>
+            <div className='md:w-1/2 mx-auto mt-12 md:mt-0 bg-black'><Image width={1200} height={1} alt="Siro phát triển chiều cao và sức khỏe toàn diện cho trẻ đến từ Nhật Bản" src="/znfnf.png"  priority={true}></Image></div>
           </div>
         </div>
       <section className='w-full'><Wid/></section>
