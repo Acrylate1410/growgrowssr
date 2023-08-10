@@ -15,8 +15,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <header className='header p-4 bg-[#cde4ea] flex items-center justify-between fixed top-0 right-0 left-0 z-10'>
           <div className='flex h-12 cursor-pointer'>
-              <Image alt="" src="/logo.png" width={90} height={1} priority={true}></Image>
-              <Image alt="" src="/gfmt.png" width={70} height={1} priority={true}></Image>
+              <Image alt="logo1" src="/logo.png" width={90} height={1} priority={true}></Image>
+              <Image alt="logo2" src="/gfmt.png" width={70} height={1} priority={true}></Image>
           </div>
           <nav className='hidden md:flex'>
               {["Về chúng tôi", "Liên hệ"].map(i => 
@@ -49,7 +49,7 @@ export default function Home() {
       <section className='w-full'>
           <h2 className='font-bold text-4xl mx-auto text-center mb-8 text-sky-400 mt-20'>Quy cách đóng gói</h2>
           <div className='flex md:flex-row flex-col items-center md:justify-between py-4 px-2 md:px-20'>
-            <Image alt=""  src="/gh.png" className='w-2/3 md:w-2/5 order-2 md:order-1 mt-8 md:mt-0' width={1200} height={1} ></Image>
+            <Image alt="Quy cách đóng gói"  src="/gh.png" className='w-2/3 md:w-2/5 order-2 md:order-1 mt-8 md:mt-0' width={1200} height={1} ></Image>
             <div className='w-full md:w-1/2 md:order-2 order-1 '>
               <div className='flex'>
                   {["gói/hộp", "gram/gói"].map(i =>
@@ -193,8 +193,8 @@ function NotableBenefits() {
                                                       : 'py-8 md:flex justify-around items-center h-full bg-[#c8ddfa]'}>
                   <div className={i.id % 2 === 0 ?  'mx-auto md:mx-0 py-8 h-1/2 md:h-4/5 w-1/2 md:w-1/3 flex items-center justify-center'
                                                  :  'mx-auto md:mx-0 py-8 h-1/2 md:h-4/5 w-1/2 md:w-1/3 flex items-center justify-center order-2'}>
-                    <Image sizes="(max-width: 768px) 100vw"
-                        height={300} width={300} alt="" src={"/" + i.img}></Image>
+                      <Image sizes="(max-width: 768px) 100vw"
+                          height={300} width={300} alt="Grow Grow có gì nổi bật" src={"/" + i.img}></Image>
                   </div>
                   <div className='md:w-1/3 '>
                     <h2 className='font-bold text-3xl md:text-4xl mb-8 text-center md:text-start'>Grow Grow có gì nổi bật?</h2>
@@ -220,12 +220,11 @@ function Wid() {
       <p className='text-lg text-center mt-4 md:mb-0 mb-20'>Giúp mẹ chăm con nhàn rỗi và mang đến sức khỏe toàn diện cho con</p>
       <div className='md:flex justify-around items-center mx-4 md:mx-12'>
           <WidCol data={data1}/>
-          <Image 	sizes="(max-width: 768px) 100vw"
-          height={400} width={400} alt=""  
-          src="/8881630d46e995b7ccf8.jpg" className='md:w-1/3 md:mx-8 my-20 md:mx-0'></Image>
+          <Image 	sizes="(max-width: 768px) 100vw" height={400} width={400} alt="Công dụng"  
+              src="/8881630d46e995b7ccf8.jpg" className='md:w-1/3 md:mx-8 my-20 md:mx-0'></Image>
           <WidCol data={data2}/>
       </div>
-      </>
+    </>
   )
 }
 
